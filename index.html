@@ -3,9 +3,95 @@
   <head>
     <meta charset="utf-8">
     <link href="resources/CSS/style.css" rel=stylesheet" type=text/css">
-    <title>Project How-To</title>
+    <title>How To</title>
   </head>
   <body>
+<h1>How To:</h1>
+<h4>Setting Up Your Website</h4>
+<nav>
+  <a href="#atom">Installing Atom.</a>
+  <a href="#git">Git</a>
+  <a href="#github>Github"</a>
+  <a href="#website">Adding your files to github.</a>
+  <a href="#githubpages">Publishing Your Site</a>
+  <a href="#editing">Editing Your Site</a>
+</nav>
+
+<h2 id="atom">Installing Atom</h2>
+
+<div class="Instructions">
+<h3>Download Here! <a href=https://atom.io</a></h3>
+  <img src="C:\Users\afamo\Documents\Project How-To\Resources\Images\SharedScreenshot.jpg"/>
+</div>
+
+<h2 id="git">Installing Git</h2>
+
+<div class="Instructions">
+<h3>Download here! <a href=https://git-scm.com</a>
+  <img src="C:\Users\afamo\Documents\Project How-To\Resources\Images\Screenshot 2021-08-26 120939.jpg"/>
+</div>
+
+<h2 id="github">Setting Up Github</h2>
+
+<div class="Instructions">
+<h1><a href=https://github.com</a>
+  <li>
+    <ol>Signup For An Account and Go To Your Profile</ol>
+    <ol>Click "New in the top left corner to create a repository"</ol>
+    <img src="C:\Users\afamo\Documents\Project How-To\Resources\Images\New Repo.jpg"/>
+    <ol>Follow the steps until you get to this page.</ol>
+    <img src="C:\Users\afamo\Documents\Project How-To\Resources\Images\Web capture_26-8-2021_122339_github.com.jpeg"/>
+  <li>
+</div>
+
+
+<h2 id=website>Adding Your Files To Github</h2>
+
+<div class="Instructions">
+  <p>Note: To create your website, you must have a index.html file ready. This file is your main page that GitHub looks for.
+  </p>
+   <li>
+     <ol>Now find your project folder, right click on it, and click Open With Git Bash.</ol>
+     <ol>Type git init</ol>
+     <ol>This initializes your file with git, allowing you to use it with GitHub</ol>
+     <p>We need to setup something right now. Go to your profile settings by clicking the icon in the top right corner of your screen, and clicking settings. Now click developer setting, and click on "Personal Access Tokens." Click on what you want this token to do, and click "Generate New Token." Copy this token and save it for later.</p>
+     <ol>Now type git remote add origin https://github.com/"Your Username"/Repository Name.git</ol>
+     <ol>After this, type "git add ."</ol>
+     <ol>Now type git commit -m "Create page."</ol>
+     <p>Git now wants to connect with github.</p>
+     <ol>Type git config --global user.email "Type your Github email address in here"
+     <ol>Type git config --global user.name "Type your username here"</ol>
+     <ol>If a box asking you for your Github username appears, type it. It will then ask you for your password. Type the token instead.</ol>
+     <ol>Now type git push -u origin master</ol>
+     <p>Reload the repository page, and see if you can find your index.html file. You may have to wait a few minutes.</p>
+   </li>
+</div>
+
+
+<h2 id=githubpages>Publishing Your Site</h2>
+
+<div class="Instructions">
+<p>Unless you have a paid account, you must have your repository public. You can change this in Settings, Options, Change Repository Visibility, located at the bottom, and set to public.
+ <li>
+  <ol>Go to your Github Repository Page, open Settings, Pages.</ol>
+  <ol>Set your Source to master.</ol>
+  <ol>You can now publish your site.</ol>
+</li>
+</div>
+
+
+
+<h2 id=editing>Editing Your Site</h2>
+
+<div class=Instructions>
+  <li>
+    <ol>Open git bash by right-clicking on your project folder and clicking,"Open With Git Bash".</ol>
+    <ol>Type "git add ."</ol>
+    <ol>Type git commit -m "Name Of Change"</ol>
+    <p>Note: Don't type "Name Of Change". Type what you have changed, this helps you to understand what each change does.</p>
+    <ol>Now type "git push origin master"</ol>
+  </li>
+</div>
 
   </body>
 </html>
